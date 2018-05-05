@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://shivanigade.com/sitemap.xml
