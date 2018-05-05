@@ -47,14 +47,18 @@
     <div id="page" class="page">
       <!-- Header -->
       <header id="site_header" class="header mobile-menu-hide">
-        <div class="my-photo">
-          <img src="images/my_photo.jpeg" alt="image">
+        <div itemref="data-author" itemscope itemtype="https://schema.org/Website" class="my-photo">
+          <img itemprop="image" src="images/my_photo.jpeg" alt="image">
           <div class="mask"></div>
         </div>
 
         <div class="site-title-block">
-          <h1 class="site-title">Shivani Gade</h1>
-          <p class="site-description">Software Engineer</p>
+          <h1 itemprop="name" class="site-title">Shivani Gade</h1>
+          <p itemprop="Description" class="site-description">Software Engineer</p>
+          <p itemprop="keywords" class="hidden">
+            Shivani Gade, New York, Backend Developer, Frontend Developer, software engineer, java, python, Pace university, Full-Stack Developer
+          </p>
+          <a itemprop="url" href="#" class="hidden">View Website</a>
         </div>
 
         <!-- Navigation & Social buttons -->
@@ -627,18 +631,26 @@
                 <h5 class="section-description">Get in Touch</h5>
               </div>
 
-              <div class="row">
+              <div itemprop="author" itemscope itemtype="https://schema.org/Person" class="row">
                 <div class="col-sm-12 col-md-12 subpage-block">
                   <div class="block-title">
                     <h3>Get in Touch</h3>
                   </div>
                   <p>Have an idea you need to talk about, want to connect or just talk about a project. Here are my contact details.</p>
+                  <div class="hidden contact-info-block">
+                    <div class="ci-icon">
+                      <i class="pe-7s-icon pe-7s-map-marker"></i>
+                    </div>
+                    <div class="ci-text">
+                      <h3 itemprop="name">Shivani Gade</h3>
+                    </div>
+                  </div>
                   <div class="contact-info-block">
                     <div class="ci-icon">
                       <i class="pe-7s-icon pe-7s-map-marker"></i>
                     </div>
                     <div class="ci-text">
-                      <h3>New York, NY</h3>
+                      <h3 itemprop="address"><em itemprop="addressLocality">New York</em>, <em itemprop="addressRegion">NY</em>, <em itemprop="addressCountry">USA</em></h3>
                     </div>
                   </div>
                   <div class="contact-info-block">
@@ -646,7 +658,7 @@
                       <i class="pe-7s-icon pe-7s-mail"></i>
                     </div>
                     <div class="ci-text">
-                      <h3><a href="mailto:gadeshivani@gmail.com" style="color:black !important">gadeshivani@gmail.com</a></h3>
+                      <h3><a itemprop="email" href="mailto:gadeshivani@gmail.com" style="color:black !important">gadeshivani@gmail.com</a></h3>
                     </div>
                   </div>
                   <div class="contact-info-block">
@@ -654,7 +666,7 @@
                       <i class="pe-7s-icon pe-7s-call"></i>
                     </div>
                     <div class="ci-text">
-                      <h3><a href="tel:+19178257631" style="color:black !important">+1 917-825-7631</a></h3>
+                      <h3><a itemprop="phone" href="tel:+19178257631" style="color:black !important">+1 917-825-7631</a></h3>
                     </div>
                   </div>
                   <div class="contact-info-block">
